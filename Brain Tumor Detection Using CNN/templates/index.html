@@ -1,0 +1,58 @@
+{% extends "import.html" %}
+
+{% block content %}
+<div class="content-wrapper">
+    <center>
+        <p>Brain tumors are abnormal cell growths within the brain that can be either benign or malignant. These tumors pose significant health risks, as they can disrupt normal brain function and lead to symptoms like persistent headaches, seizures, vision problems, memory loss, and impaired coordination. While the exact causes of brain tumors remain unclear, genetic predispositions, exposure to ionizing radiation, and certain environmental factors are known to increase the risk. Early detection is vital for improving treatment outcomes. Precautions include regular health screenings, particularly for those with a family history of brain tumors, and minimizing exposure to potential risk factors like unnecessary radiation.</p>
+        <p>Treatment options typically involve a combination of surgery to remove the tumor, radiation therapy to target remaining cancer cells, and chemotherapy to slow or stop tumor growth. Additionally, medications may be prescribed to manage symptoms such as pain, seizures, and swelling. Patients are encouraged to follow a healthy lifestyle, maintain regular medical consultations, and adhere to prescribed treatment plans to manage the condition effectively and improve quality of life.</p>
+
+        <form id="upload-file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
+        </form>
+
+        <h2>Brain Tumor Detector</h2>
+        <div class="image-section" style="display:none;">
+            <img id="imagePreview" class="img-responsive" src="#" style="width:300px; height:auto;"/><br><br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg" id="btn-predict">Upload and Predict !</button>
+            </div>
+        </div>
+
+        <div class="loader"></div>
+
+        <h3 id="result">
+            <span> </span>
+        </h3>
+    </center>
+
+    <!-- Member Details Section -->
+    <div class="members-info">
+        <h3 class="team-header">Our Team</h3>
+        <div class="members-list">
+            <div class="member">
+                <div class="member-name">Avnee Joshi</div>
+                <div class="member-links">
+                    <a href="https://www.linkedin.com/in/avnee-joshi" target="_blank">LinkedIn</a>
+                    <span class="link-separator">|</span>
+                    <a href="https://github.com/avneejoshi" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-name">Payal Hazari</div>
+                <div class="member-links">
+                    <a href="https://www.linkedin.com/in/payal-hazari" target="_blank">LinkedIn</a>
+                    <span class="link-separator">|</span>
+                    <a href="https://github.com/payal-hazari" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="member">
+                <div class="member-name">Purvika Mandloi</div>
+                <div class="member-links">
+                    <a href="https://www.linkedin.com/in/purvika-mandloi" target="_blank">LinkedIn</a>
+                    <span class="link-separator">|</span>
+                    <a href="https://github.com/purvika-mandloi" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

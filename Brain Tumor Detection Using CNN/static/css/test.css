@@ -1,0 +1,121 @@
+/* General styles for content wrapper */
+.content-wrapper {
+    text-align: left; /* Align all text to the left by default */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for better contrast */
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    color: #ffffff; /* White text color for high contrast */
+}
+
+/* Paragraph styling */
+.content-wrapper p {
+    text-align: left; /* Ensure paragraphs are left-aligned */
+    font-size: 1.1em; /* Decreased font size for paragraphs */
+    margin: 0 0 20px; /* Add margin below paragraphs */
+    line-height: 1.8; /* Adjust line height for better readability */
+    color: #e0e0e0; /* Slightly off-white text color */
+}
+
+/* Header styling */
+h2, h3 {
+    color: #ffd700; /* Bright gold color for headers */
+    margin-bottom: 20px; /* Space below the header */
+    text-align: center; /* Center-align headers */
+    font-size: 2em; /* Increased font size for headers */
+}
+
+/* File upload button styling */
+#upload-file .btn {
+    background-color: #00bfff; /* Vivid sky blue color for the file upload button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 24px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    border-radius: 25px; /* Rounded corners for button */
+    font-size: 1em; /* Decreased font size for buttons */
+}
+
+#upload-file .btn:hover {
+    background-color: #1e90ff; /* Darker blue on hover */
+}
+
+/* Image section styling */
+.image-section {
+    margin-top: 20px; /* Increased margin for better spacing */
+}
+
+/* Loader styling */
+.loader {
+    display: none; /* Hide loader initially */
+    margin: 20px auto;
+}
+
+/* Result header styling */
+#result {
+    margin-top: 20px;
+    color: #ffd700; /* Gold color for result text */
+    font-size: 1.8em; /* Decreased font size for result text */
+}
+
+/* Member details section styling */
+.members-info {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background for better contrast */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    margin-top: 60px; /* Increased space from the above paragraph */
+    border-radius: 8px; /* Rounded corners for better aesthetics */
+    text-align: center; /* Center-align content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Added shadow for contrast */
+}
+
+/* Members list styling */
+.members-list {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 300px; /* Increased space between items */
+}
+
+/* Individual member styling */
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside member */
+    flex: 1 1 200px; /* Allow items to grow/shrink and set base width */
+    position: relative;
+}
+
+/* Ensure member names are aligned at the bottom */
+.member-name {
+    margin-bottom: 10px; /* Increased space between name and links */
+    color: #FFF8DC; /* White color for member names */
+    font-size: 1.1em; /* Decreased font size for member names */
+}
+
+/* Member links styling */
+.member-links {
+    display: flex;
+    align-items: center; /* Center links vertically */
+    justify-content: center; /* Center links horizontally */
+}
+
+/* Links styling */
+.member-links a {
+    text-decoration: none;
+    color: #00bfff; /* Bright sky blue color for links */
+    margin: 0 15px; /* Space around links */
+    font-size: 1em; /* Decreased font size for links */
+}
+
+/* Link hover effect */
+.member-links a:hover {
+    text-decoration: underline;
+    color: #1e90ff; /* Darker blue on hover */
+}
+
+/* Separator styling */
+.link-separator {
+    color: #00bfff; /* Match separator color with link color */
+    margin: 0 15px; /* Space around the separator */
+    font-size: 1em; /* Decreased font size for separator */
+}

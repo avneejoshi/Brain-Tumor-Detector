@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brain Tumor Detection</title>
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" type="text/javascript"></script>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='images/background.jpeg') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar-brand {
+            color: #ffcc00 !important;
+            font-size: 20px; /* Adjust size as needed */
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+        }
+        .navbar {
+            background-color: #343a40; /* Dark background for navbar */
+        }
+        .header-section {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: left; /* Align text to the left */
+            background-color: rgba(0, 0, 0, 0.5); /* Optional: add background color for better readability */
+        }
+        .project-title {
+            font-size: 24px;
+            color: #ffcc00; /* Title color */
+            margin: 0;
+        }
+        .project-description {
+            font-size: 16px;
+            color: #ffffff; /* Description color */
+            margin: 5px 0 0; /* Margin to space below the title */
+        }
+        .content-wrapper {
+            flex: 1; /* Make sure the content fills available space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            padding: 20px; /* Optional: add padding around content */
+        }
+    </style>    
+</head>
+<body>
+    <div class="header-section">
+        <h1 class="project-title">Major Project: Brain Tumor Detection Using CNN</h1>
+        <p class="project-description">Welcome to our project on Brain Tumor Detection using CNN. This project aims to leverage the power of Convolutional Neural Networks to detect brain tumors with high accuracy.</p>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <!-- Ensure script.js is included last to avoid any potential conflicts -->
+    <script src="{{ url_for('static', filename='js/script.js') }}" type="text/javascript"></script>
+</body>
+</html>
