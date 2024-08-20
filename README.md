@@ -1,7 +1,6 @@
 # Brain Tumor Detection Using CNN
 
 **Welcome to the Brain Tumor Detection project !**
-**Created by : Avnee Joshi, Payal Hazari, Purvika Mandloi**
 
 ## About
 - This project is a Flask-based web application designed for brain tumor detection. It focuses on developing a deep learning model using Convolutional Neural Networks (CNN) to automatically identify brain tumors from MRI images, distinguishing between tumorous and non-tumorous cases..
