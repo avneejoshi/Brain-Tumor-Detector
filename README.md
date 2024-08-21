@@ -25,5 +25,3 @@
 - [VGG Unfrozen Model](https://brain-tumor-detector-largefiles.s3.amazonaws.com/vgg_unfrozen.h5)
 - [VGG19 Model 01](https://brain-tumor-detector-largefiles.s3.amazonaws.com/vgg19_model_01.h5)
 - [VGG19 Model 02](https://brain-tumor-detector-largefiles.s3.amazonaws.com/vgg19_model_02.h5)
-
-Feel free to reach out if you have any questions or need further assistance!
